@@ -13,3 +13,5 @@ blue = (0, 0, 255)
 grey = (128,128,128)
 
 
+crown = pygame.transform.scale(pygame.image.load('assests/crown1.jpg'), (44, 25))
+
