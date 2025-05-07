@@ -1,4 +1,4 @@
 
 import pygame
-from .constants import red, white, blue, square_size
-from checkers.GameBoard import Board
+from .Visuals import TONE_RED, TONE_WHITE, TONE_BLUE, CELL_SIZE
+from checkers.GameBoard import CheckerBoard

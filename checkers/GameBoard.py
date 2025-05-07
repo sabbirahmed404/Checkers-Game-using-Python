@@ -1,5 +1,5 @@
 import pygame
-from .constants import black, rows, red, square_size, cols, white
+from .Visuals import black, rows, red, square_size, cols, white
 from .piece import Piece
 
 class CheckerBoard:
