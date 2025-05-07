@@ -1,8 +1,8 @@
 import pygame
-from .Visuals import black, rows, red, square_size, cols, white
+from .visuals import black, rows, red, square_size, cols, white
 from .piece import Piece
 
-class CheckerBoard:
+class GameBoard:
     def __init__(self):
         self.grid = []
         self.red_pieces = self.white_pieces = 12

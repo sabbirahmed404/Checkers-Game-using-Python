@@ -1,8 +1,8 @@
 import pygame
-from .Visuals import TONE_RED, TONE_WHITE, HINT_BLUE, CELL_SIZE
-from checkers.GameBoard import BoardMatrix
+from .visuals import TONE_RED, TONE_WHITE, HINT_BLUE, CELL_SIZE
+from checkers.game_board import BoardMatrix
 
-class GameEngine:
+class GameSession:
     def __init__(self, display_surface):
         self.screen = display_surface
         self._initialize_session()
