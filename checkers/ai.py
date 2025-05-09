@@ -35,18 +35,18 @@ def alpha_beta(position, depth, alpha, beta, maximizing_player, game):
         return min_eval, best_move
 
 def simulate_move(piece, move, board, game, skip):
-    board.move(piece, move[0], move[1])
+    board.relocate(piece, move[0], move[1])
     if skip:
-        board.remove(skip)
+        board.eliminate(skip)
     return board
 
 def get_all_moves(board, color, game):
     moves = []
-    for piece in board.get_all_pieces(color):
-        valid_moves = board.get_valid_moves(piece)
+    for piece in board.pieces_of_color(color):
+        valid_moves = board.available_moves(piece)
         for move, skip in valid_moves.items():
             temp_board = deepcopy(board)
-            temp_piece = temp_board.get_piece(piece.row, piece.col)
+            temp_piece = temp_board.piece_at(piece.row, piece.col)
             new_board = simulate_move(temp_piece, move, temp_board, game, skip)
             moves.append(new_board)
     return moves

@@ -1,6 +1,6 @@
 
 import pygame
-from checkers.visuals import WIDTH, HEIGHT, SQUARE_SIZE, RED, WHITE
+from checkers.Visuals import WIDTH, HEIGHT, SQUARE_SIZE, RED, WHITE
 from checkers.game_session import GameSession
 from checkers.ai import alpha_beta
 
